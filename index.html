@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveySpark - Online Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Survey<span>Spark</span></h1>
+    <p>Share Your Thoughts, Make a Difference!</p>
+</header>
+
+<div class="container">
+
+    <div class="welcome">
+        <h2>Welcome to Online Survey</h2>
+        <p>Answer random questions and share your opinions with us.</p>
+        <button onclick="startSurvey()">Start Survey</button>
+    </div>
+
+    <div class="survey-box" id="surveyBox">
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <p id="questionNumber">Question 1</p>
+
+        <h2 id="question">Your question will appear here</h2>
+
+        <div id="options"></div>
+
+        <button id="nextBtn" onclick="nextQuestion()">
+            Next Question
+        </button>
+
+    </div>
+
+    <div class="result-box" id="resultBox">
+        <h2>Survey Completed! 🎉</h2>
+        <p id="resultText"></p>
+        <button onclick="restartSurvey()">Try Again</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 SurveySpark | Online Survey Application</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
