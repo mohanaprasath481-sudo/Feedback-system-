@@ -29,7 +29,7 @@ function App() {
 
     try {
       await axios.post(
-        '/api/feedback',
+        'https://feedbackform-ena7.onrender.com/api/feedback',
         formData
       )
 

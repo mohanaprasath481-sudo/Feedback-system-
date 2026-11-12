@@ -11,7 +11,7 @@ function GetAllDAta() {
     const fetchFeedback = async () => {
       try {
         const response = await axios.get(
-          '/api/getfeedback'
+          'https://feedbackform-ena7.onrender.com/api/feedback'
         )
         setFeedbackList(response.data)
       } catch (error) {
