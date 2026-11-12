@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1efff;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background: #6c4ce8;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header span {
+    color: #ffd166;
+}
+
+/* Main Container */
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Welcome Section */
+
+.welcome {
+    background: white;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ccc;
+}
+
+.welcome h2 {
+    color: #6c4ce8;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Survey Box */
+
+.survey-box {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ccc;
+}
+
+.progress {
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background: #6c4ce8;
+    transition: 0.4s;
+}
+
+#questionNumber {
+    color: #6c4ce8;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.survey-box h2 {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Answer Options */
+
+.option {
+    display: block;
+    padding: 15px;
+    margin: 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    border-color: #6c4ce8;
+    background: #f5f2ff;
+}
+
+.option.selected {
+    background: #eee8ff;
+    border-color: #6c4ce8;
+}
+
+/* Buttons */
+
+button {
+    background: #6c4ce8;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #5033c5;
+}
+
+#nextBtn {
+    width: 100%;
+}
+
+/* Results */
+
+.result-box {
+    display: none;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ccc;
+}
+
+.result-box h2 {
+    color: #6c4ce8;
+    margin-bottom: 20px;
+}
+
+.result-box p {
+    line-height: 1.8;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 600px) {
+    .container {
+        margin: 25px auto;
+    }
+
+    .survey-box, .welcome {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
